@@ -141,3 +141,37 @@ header{
 .navbar_toggle ion-icon:hover {
     color: var(--seconday-color);
 }
+/* Cards de temas */
+.temas {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 25px;
+  padding: 50px 20px;
+  background: #eef2f7;
+  
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #003366;
+}
