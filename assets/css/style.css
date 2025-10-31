@@ -109,6 +109,14 @@ header{
     margin-left: 3rem;
 }
 
+.login{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
 
 /*busca*/
 .search-box {
@@ -194,9 +202,30 @@ header{
 }
 
 .carrosel-not{
-    position: relative;
+    position:absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+.left-arrow{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-left: 0.9rem;
+    cursor: pointer;
+   
+}
+
+.right-arrow{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-right: 0.9rem;
+    cursor: pointer;
+}
+
+.texto-slide{
+    
 }
