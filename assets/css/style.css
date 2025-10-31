@@ -23,6 +23,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #AACADD;
 }
 
 a{
@@ -98,6 +99,16 @@ header{
     color: var(--seconday-color);
     border-bottom: 2px solid var(--seconday-color);
 }
+/*login*/
+.login button{
+    display: flex;
+    align-items:center;
+    border-bottom: 2px solid var(--seconday-color);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.1rem;
+    margin-left: 3rem;
+}
+
 
 /*busca*/
 .search-box {
@@ -174,4 +185,18 @@ header{
 .card h3 {
   font-size: 16px;
   color: #003366;
+}
+
+.noticias{
+    width: 50px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.carrosel-not{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
