@@ -234,6 +234,13 @@ header{
     padding: 10px;
 }
 
+.texto-slide{
+    background: #eef2f7;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
 /* CARDS */
 .cards {
     display: flex;
@@ -268,4 +275,5 @@ header{
 
 .more:hover {
     background: #f5c44c;
+    align-items: center;
 }
