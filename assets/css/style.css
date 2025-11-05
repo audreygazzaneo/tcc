@@ -347,8 +347,9 @@ header{
   background-size: cover;
 }
 
-.left img{
-  background-size: cover;
+.tape .left img{
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
