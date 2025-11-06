@@ -32,7 +32,7 @@ a{
 
 /*CABEÇALHO*/
 .section_container {
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 5rem 1rem;
 }
@@ -43,7 +43,7 @@ header{
 }
 
 .navbar_container {
-    max-width: 1400px;
+    max-width: 1500px;
     background-color: var(--white);
     margin: auto;
     display: flex;
@@ -317,7 +317,7 @@ header{
 .botao {
     align-items:center;
     padding: 15px;
-    padding-left: 800px;
+    margin-left: 950px;
 }
 
 /*INDICAÇÕES DA SEMANA ~ nao aguebtoi mais*/
