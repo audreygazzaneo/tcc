@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #0f1a2c;                    
+    --seconday-color: #f6ac0f;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --gradient: linear-gradient(to right bottom, #ffd43b, #ff9900);
+
+    --ff: 'Playfair Display', serif;
+
+    /*DEFINE 1REM - 16PX*/
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #AACADD;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*CABEÇALHO*/
+.section_container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+}
+
+header{
+    background-color: var(--primary-color);
+    height: 100px;
+}
+
+.navbar_container {
+    max-width: 1500px;
+    background-color: var(--white);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 1rem 2rem;
+    transform: translateY(50%);
+}
+
+.navbar_logo img {
+    margin-top: 5px;
+    max-width: 250px;
+    display: block;
+}
+
+/*itens menu*/
+.navbar_links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar_links a{
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar_links a:hover{
+    color: #AACADD;
+    border-bottom: 2px solid #AACADD;
+}
+/*login*/
+.login button{
+    display: flex;
+    align-items:center;
+    border-bottom: 2px solid var(--seconday-color);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.1rem;
+    margin-left: 3rem;
+}
+
+.login{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+
+/*busca*/
+.search-box {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #003366;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.1rem;
+    margin-left: 2rem;
+}
+
+.search-box input {
+    border: none;
+    padding-left: 0.8rem;
+    font-style: italic;
+    outline: none;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+    width: 230px;
+
+}
+
+.search {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.navbar_toggle {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+
+.navbar_toggle ion-icon:hover {
+    color: var(--seconday-color);
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: #d9e6f3;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+
+.Footer-top img {
+    height: 250px;
+}
+
+.Footer-top {
+    margin: 10px auto 30px;
+    max-width: 500px;
+    font-size: 16px;
+    color: #444;
+}
+
+.Footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.contato, .social {
+    text-align: left;
+
+}
+
+.contato h3, .contato p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contato img {
+  width: 18px;
+}
+
+.social p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.social .Icones a img {
+    width: 25px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.copy {
+    background-color: #cfdceb;
+    padding: 15px;
+    font-size: 13px;
+    margin: 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Caixas > div {
+        width: 85%;
+    }
+
+    .Footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
