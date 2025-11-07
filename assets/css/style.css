@@ -321,11 +321,18 @@ header{
 }
 
 /*INDICAÇÕES DA SEMANA ~ nao aguebtoi mais*/
-.indicacoes{
-  background-color: #0A1A34; 
-  color: white;
-  padding-top: 50px;
+.indicacoes {
+  background-color: #0A1A34;
+  padding: 50px 0;
   text-align: center;
+}
+
+/* A fita agora cobre toda a área de conteúdo */
+.tape {
+  position: relative;
+  width: 100%;
+  background-color: #AACADD;
+  padding: 40px 0;
 }
 
 .semana h1{
@@ -339,13 +346,6 @@ header{
   width: 30px;
 }
 
-.tape {
-  position: relative;
-  background-color: #eef2f7;
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-}
 
 .tape .left img{
   background-position: center;
@@ -504,4 +504,38 @@ header{
   
 }
 
+/*MEUS AJUSTES*/
+
+/* LATERAIS DO FILME */
+.side {
+  position: absolute;
+  top: 0;
+  width: 95px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: repeat-y;
+  z-index: 0;
+}
+
+/* LADO ESQUERDO */
+.left {
+  left: 0;
+  background-image: url("../img/pngwing\(1\).com.png");
+  background-position: center;
+}
+
+/* LADO DIREITO */
+.right {
+  right: 0;
+  background-image: url("../img/pngwing\(1\).com.png");
+  background-position: center;
+}
+
+/* Impedir sobreposição do conteúdo */
+.conteudo-central {
+  width: min(1200px, 90%); 
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
 
