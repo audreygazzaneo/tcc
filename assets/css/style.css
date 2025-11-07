@@ -325,6 +325,7 @@ header{
   background-color: #0A1A34;
   padding: 50px 0;
   text-align: center;
+  color: var(--white);
 }
 
 /* A fita agora cobre toda a área de conteúdo */
@@ -418,67 +419,45 @@ header{
 
 
 /*FOOTER*/
-.bottom {
-  background-color: #0A1A34; 
-  color: white;
-  padding-top: 90px;
+footer {
+    background-color: #d9e6f3;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
 }
 
-.footer {
-  max-width:none;
-  margin: auto;
-  padding: 5px;
-  display:block;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; 
-  background-color: #AACADD; 
-  border-radius: none;
-  color: #000;
-  text-align: center;
+.Footer-top img {
+    height: 250px;
 }
 
-.Logotipo {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+.Footer-top {
+    margin: 10px auto 30px;
+    max-width: 500px;
+    font-size: 16px;
+    color: #444;
 }
 
-.Logotipo img {
-  width: 500px;
-  height: 500px;
+.Footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0;
 }
 
-.logotipo p{
-    margin: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
-    padding-bottom: 50px;
+.contato, .social {
+    text-align: left;
 
 }
 
-/* Contato */
-.contato {
-  flex: 1;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.contato p {
-  margin: 5px 0;
+.contato h3, .contato p {
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  position: relative;
+  gap: 8px;
 }
 
-
-.icon-ctt {
+.contato img {
   width: 18px;
-  vertical-align: middle;
-  left: 50px;
-  margin: 0.2rem;
 }
 
 .social p {
@@ -486,22 +465,35 @@ header{
     margin-bottom: 10px;
 }
 
-.social .Icones {
-    width: 30px;
+.social .Icones a img {
+    width: 25px;
     margin-right: 10px;
     transition: 0.3s;
-    cursor: pointer;
 }
 
-.creditos {
-  flex: 1;
-  position: absolute;
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 0.85rem;
-  color: #333;
-  right: 50px;
-  
+.copy {
+    background-color: #cfdceb;
+    padding: 15px;
+    font-size: 13px;
+    margin: 0;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Caixas > div {
+        width: 85%;
+    }
+
+    .Footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /*MEUS AJUSTES*/
