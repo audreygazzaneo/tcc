@@ -237,6 +237,188 @@ header{
   padding-left: 20px; 
 }
 
+/* Equipe */
+.equipe {
+    padding: 80px 20px;
+    background: var(--primary-color);
+    text-align: center;
+    font-family: var(--ff-playfair);
+    color: var(--white);
+  }
+  
+  .titulo-secao h2 {
+    font-size: 2.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  .titulo-secao p {
+    color: var(--extra-light);
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+  
+  /* ===== FLEXBOX ===== */
+  .cards-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  /* ===== CARD ===== */
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 calc(33.333% - 40px); /*1 1 300px; */
+    max-width: 380px;
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* ===== AVATAR ===== */
+  .avatar {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 3px solid var(--secondary-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .avatar:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ===== OVERLAY ===== */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 26, 44, 0.7);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.4s ease;
+  }
+  
+  .avatar:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* ===== REDES SOCIAIS ===== */
+  .social {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .social a {
+    color: var(--white);
+    font-size: 1.4rem;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .social a:hover {
+    background: var(--secondary-color);
+    border-color: transparent;
+    transform: scale(1.1);
+  }
+  
+  .social a:hover ion-icon {
+    transform: rotate(10deg);
+    transition: transform 0.3s ease;
+  }
+  
+  /* ===== TEXTO ===== */
+  .card h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* ===== IMAGENS ===== */
+  .membro1 .avatar {
+    background-image: url('../img/foto01.jpg');
+  }
+  
+  .membro2 .avatar {
+    background-image: url('../img/foto02.jpg');
+  }
+  
+  .membro3 .avatar {
+    background-image: url('../img/foto03.jpg');
+  }
+  
+  .membro4 .avatar {
+    background-image: url('../img/foto04.jpg');
+  }
+  
+  .membro5 .avatar {
+    background-image: url('../img/foto05.jpg');
+  }
+  
+  .membro6 .avatar {
+    background-image: url('../img/foto06.jpg');
+  }
+  
+  /* ===== ANIMAÇÃO DE ENTRADA ===== */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .card:nth-child(5) {
+    animation-delay: 1s;
+  }
+  .card:nth-child(6) {
+    animation-delay: 1.2s;
+  }
 
 /* ======== RODAPÉ ======== */
 footer {
