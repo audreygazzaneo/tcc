@@ -140,49 +140,7 @@ header{
     color: var(--seconday-color);
 }
 
-/* ===== CAIXA DE SELEÇÃO ===== */
-.language-selector {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--white);
-  border: 1px solid var(--secondary-color);
-  border-radius: 8px;
-  padding: 3px 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.language-selector:hover {
-  background: var(--secondary-color);
-}
-
-.lang-icon {
-  font-size: 1.3rem;
-  color: var(--secondary-color);
-  transition: color 0.3s;
-}
-
-.language-selector:hover .lang-icon {
-  color: var(--primary-color);
-}
-
-.lang-select {
-  border: none;
-  outline: none;
-  background: transparent;
-  font-weight: 600;
-  color: var(--text-dark);
-  font-size: 0.95rem;
-  cursor: pointer;
-  padding: 3px 6px;
-  border-radius: 6px;
-  width: 60px;
-}
-
-.language-selector:hover .lang-select {
-  color: var(--primary-color);
-}
 
 
 /*FOOTER*/
