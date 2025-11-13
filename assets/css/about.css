@@ -498,12 +498,12 @@ footer {
   width: 18px;
 }
 
-.social p {
+.socials p {
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.social .Icones a img {
+.socials .Icones a img {
     width: 25px;
     margin-right: 10px;
     transition: 0.3s;
