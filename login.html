@@ -27,14 +27,7 @@
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
-
-                <!--Login-->
-                <div class="login-box">
-                    <button class="login">
-                        <ion-icon name="person-circle-outline"></ion-icon>
-                    </button>
-                </div>
-                
+                             
 
                 <!--Busca-->
                 <div class="search-box">
@@ -44,6 +37,22 @@
                     <input type="text" placeholder="Pesquisar..." />
                 </div>
 
+                <!--Login-->
+                <div class="login-box">
+                    <button class="login">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Seletor de idioma -->
+                <div class="language-selector">
+                    <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+                     <select class="lang-select" onchange="location = this.value;">
+                     <option value="login.html" selected>BR</option>
+                     <option value="login-en.html">EN</option>
+                    </select>
+                </div>
+                
                 <!--Botão mobile-->
                 <button class="navbar_toggle" aria-label="menu mobile">
                     <ion-icon name="menu-outline"></ion-icon>

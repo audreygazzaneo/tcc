@@ -1,11 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="shortcut icon" href="assets/img/iconcult-direitos.png" type="image/x-icon">
 </head>
+
 <body>
-    
+    <!-- Cabeçalho-->
+    <header class="header">
+        <nav>
+            <div class="navbar_container">
+                <a href="#" class="navbar_logo">
+                    <img src="assets/img/Cultura & Direitos (1).png" alt="logo" />
+                </a>
+
+                <!--Links de navegação-->
+                <ul class="navbar_links">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="noticias.html">News</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Movies & Series</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                
+                <!--Busca-->
+                <div class="search-box">
+                    <button class="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                    <input type="text" placeholder="Pesquisar..." />
+                </div>
+                <!--Login-->
+                <div class="login-box">
+                    <button class="login">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!-- Seletor de idioma -->
+                <div class="language-selector">
+                    <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+                     <select class="lang-select" onchange="location = this.value;">
+                     <option value="about-us.html" selected>EN</option>
+                     <option value="sobre-nos.html">BR</option>
+                    </select>
+                </div>
+
+                <!--Botão mobile-->
+                <button class="navbar_toggle" aria-label="menu mobile">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+          <!-- Seções -->
+
+    <section class="sobre">
+        <h1>Sobre nós</h1>
+        
+        <div class="Caixas">
+        <div class="missao">
+            <div class="icone"><img src="Assets/IMG/missao.png"></div>
+                <h3>Missão</h3>
+                <p>Promover a cultura e a defesa dos direitos humanos por meio de conteúdo educacional, campanhas e ações de impacto.</p>
+            </div>
+
+            <div class="quem-somos">
+            <div class="icone"><img src="Assets/IMG/grupo.png"></div>
+                <h3>Quem somos</h3>
+                <p>Somos um   projeto dedicado a promover a conscientização sobre os Direitos Humanos e incentivar o respeito, a igualdade e a justiça.</p>
+            </div>
+
+        <div class="valores">
+            <div class="icone"><img src="Assets/img/valor (1).png"></div>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Igualdade</li>
+                    <li>Empatia</li>
+                    <li>Respeito</li>
+                    <li>Justiça Social</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--EQUIPE-->
+    <!-- Equipe Sobre -->
+    <section class="equipe">
+        <div class="container">
+          <div class="titulo-secao">
+            <h2>Conheça Nossa Equipe</h2>
+            <p>
+              Estudantes dedicados que fazem a diferença.
+            </p>
+          </div>
+  
+          <div class="cards-equipe">
+            <!-- Membro 1 -->
+            <article class="card membro1">
+              <div class="avatar">
+                <div class="overlay">
+                  <div class="social">
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Audrey Girald Gazzaneo</h3>
+              <p>Responsável pela parte de FRONT-END.</p>
+            </article>
+  
+            <!-- Membro 2 -->
+            <article class="card membro2">
+              <div class="avatar">
+                <div class="overlay">
+                  <div class="social">
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Gabriely Ramos de Paula</h3>
+              <p>
+                Responsável pela parte de FRONT-END.
+              </p>
+            </article>
+  
+            <!-- Membro 3 -->
+            <article class="card membro3">
+              <div class="avatar">
+                <div class="overlay">
+                  <div class="social">
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Yasmin Rodrigues da Silva</h3>
+              <p>
+                Responsável pelo design gráfico do FIGMA.
+              </p>
+            </article>
+  
+            <!-- Membro 4 -->
+            <article class="card membro4">
+              <div class="avatar">
+                <div class="overlay">
+                  <div class="social">
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Arthur Pereira Silva</h3>
+              <p>Responsável pelo auxílio no design do FIGMA e por atualizar as notícias.</p>
+            </article>
+ 
+          </div>
+        </div>
+      </section>
+
+    <!-- Rodapé -->
+
+    <footer>
+        <div class="Footer-top">
+            <div class="Footer-logo">
+                <img src="Assets/IMG/Cultura & Direitos (1).png" alt="Cultura & Direitos">
+            </div>
+            <p>Promovendo a igualdade, o respeito e a justiça social por meio da informação e da cultura.</p>
+        </div>
+
+        <div class="Footer-bottom">
+           <div class="contato">
+                <p><img src="Assets/IMG/pin-de-localizacao.png"> <strong>Contato:</strong></p>
+                <p><img src="Assets/IMG/o-email.png"> culturaedireitos@gmail.com</p>
+                <p><img src="Assets/IMG/telefone.png"> (12) 99999-9999</p>
+            </div>
+
+
+            <div class="social">
+                <p>Siga nas redes sociais:</p>
+                <div class="Icones">
+                    <a href="#"><img src="Assets/IMG/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="Assets/IMG/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="Assets/IMG/tiktok.png" alt="tiktok"></a>
+                    <a href="#"><img src="Assets/IMG/youtube.png" alt="youtube"></a>
+                </div>  
+            </div>
+        </div>
+
+        <p class="copy">Direitos Autorais © 2025 - Todos os direitos reservados. Desenvolvido para fins educativos e de conscientização social.</p>
+    </footer>
+
+    <!--Ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
