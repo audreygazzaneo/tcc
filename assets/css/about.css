@@ -410,29 +410,21 @@ header{
   
   /* ===== IMAGENS ===== */
   .membro1 .avatar {
-    background-image: url('../img/foto01.jpg');
+    background-image: url('../img/audrey.jpg');
   }
   
   .membro2 .avatar {
-    background-image: url('../img/foto02.jpg');
+    background-image: url('../img/gabriely.jpg');
   }
   
   .membro3 .avatar {
-    background-image: url('../img/foto03.jpg');
+    background-image: url('../img/yasmin.jpg');
   }
   
   .membro4 .avatar {
-    background-image: url('../img/foto04.jpg');
+    background-image: url('../img/arthur.jpg');
   }
-  
-  .membro5 .avatar {
-    background-image: url('../img/foto05.jpg');
-  }
-  
-  .membro6 .avatar {
-    background-image: url('../img/foto06.jpg');
-  }
-  
+     
   /* ===== ANIMAÇÃO DE ENTRADA ===== */
   @keyframes fadeUp {
     from {
