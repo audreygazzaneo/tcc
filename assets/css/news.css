@@ -247,6 +247,18 @@ main {
     cursor: pointer;
 }
 
+.btn {
+    align-items:baseline;
+    padding-left: 800px;
+    margin-top: 20px;
+    background: #f7cf66;
+    border: none;
+    padding: 18px 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
 
 
 /*FOOTER*/
