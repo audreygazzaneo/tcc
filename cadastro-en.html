@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Culture & Rights</title>
+    <title>Registration - Culture & Rights</title>
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="shortcut icon" href="assets/img/iconcult-direitos.png" type="image/x-icon">
 </head>
@@ -47,8 +47,8 @@
                 <div class="language-selector">
                     <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
                      <select class="lang-select" onchange="location = this.value;">
-                     <option value="login.html">BR</option>
-                     <option value="login-en.html" selected>EN</option>
+                     <option value="cadastro.html">BR</option>
+                     <option value="cadastro-en.html" selected>EN</option>
                     </select>
                 </div>
                 
@@ -60,7 +60,7 @@
         </nav>
     </header>
     
-<!-- LOGIN -->
+<!-- registration -->
 
 <main class="container">
 
@@ -69,24 +69,50 @@
     </div>
 
     <div class="right">
-        <h2>Login</h2>
-        <p>If you don't have an account? <a href="cadastro-en.html">Create one here</a></p>
+        <h2>Registration</h2>
 
         <form>
+
+            <div class="row">
+                <div>
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+
             <label>Email</label>
             <input type="email">
 
             <label>Password</label>
             <input type="password">
 
+            <label>Confirm Password</label>
+            <input type="password">
+
             <div class="remember">
                 <input type="checkbox">
-                <span>Keep me logged in</span>
+                <span>I have read and agree to the Terms and Privacy Policy</span>
             </div>
 
-            <button type="submit" class="login-btn">Log in</button>
+            <button class="login-btn">Register</button>
 
-            <a class="forgot" href="#">Forgot your password?</a>
+            <div class="divider">Or</div>
+
+            <div class="social-login">
+                <button class="social-btn"><ion-icon name="logo-twitter"></ion-icon></button>
+                <button class="social-btn"><ion-icon name="logo-facebook"></ion-icon></button>
+                <button class="social-btn"><ion-icon name="logo-google"></ion-icon></button>
+            </div>
+
+            <p class="alt">
+                If you already have an account? <a href="login-en.html">Login</a>
+            </p>
+
         </form>
     </div>
 
