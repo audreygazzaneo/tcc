@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News - Culture & Rights</title>
-    <link rel="stylesheet" href="assets/css/news.css">
+    <title>Login - Culture & Rights</title>
+    <link rel="stylesheet" href="assets/css/login.css">
     <link rel="shortcut icon" href="assets/img/iconcult-direitos.png" type="image/x-icon">
 </head>
 
@@ -27,8 +27,7 @@
                     <li><a href="about-us.html">About us</a></li>
                     <li><a href="contato-en.html">Contacts</a></li>
                 </ul>
-
-                          
+                             
 
                 <!--Search-->
                 <div class="search-box">
@@ -49,10 +48,11 @@
                 <div class="language-selector">
                     <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
                      <select class="lang-select" onchange="location = this.value;">
-                     <option value="noticias-en.html" selected>EN</option>
-                     <option value="noticias.html">BR</option>
+                     <option value="login.html">BR</option>
+                     <option value="login-en.html" selected>EN</option>
                     </select>
                 </div>
+                
                 <!--Mobile button-->
                 <button class="navbar_toggle" aria-label="mobile menu">
                     <ion-icon name="menu-outline"></ion-icon>
@@ -60,34 +60,38 @@
             </div>
         </nav>
     </header>
- <!-- News section -->
-  <main>
-    <section class="noticias">
-      <h2> <img src="assets/img/noticias.png" alt="news"> News</h2>
+    
+<!-- LOGIN -->
 
-      <article class="card">
-        <img src="assets/img/america-latina.jpg" alt="News image 1">
-        <h3>Implementation of disability rights in Latin America</h3>
-        <p>News by insuit.net</p>
-        <img class="acesso" src="assets/img/simbolo-de-compartilhamento.png" alt="share">
-      </article>
+<main class="container">
 
-      <article class="card">
-        <img src="assets/img/violacoes-direitos-humanos.jpeg" alt="News image 2">
-        <h3>Minister Macaé Evaristo reaffirms Brazil's commitment to the agenda of reparation and care for victims of human rights violations</h3>
-        <p>News by Gov.br</p>
-        <img class="acesso" src="assets/img/simbolo-de-compartilhamento.png" alt="share">
-      </article>
+    <div class="left">
+        <img src="assets/img/human-rights.avif" alt="Human Rights">
+    </div>
 
-      <article class="card">
-        <img src="assets/img/lgbt-direitos-humanos.jpg" alt="News image 3">
-        <h3>Government organizes 4th State LGBTQIA+ Conference and promotes various activities in Pride Month</h3>
-        <p>News by Gov.br - Rio Grande do Sul</p>
-        <img class="acesso" src="assets/img/simbolo-de-compartilhamento.png" alt="share">
-      </article>
-      <button class="btn">More News</button>
-    </section>
-  </main>
+    <div class="right">
+        <h2>Login</h2>
+        <p>If you don't have an account? <a href="#">Create one here</a></p>
+
+        <form>
+            <label>Email</label>
+            <input type="email">
+
+            <label>Password</label>
+            <input type="password">
+
+            <div class="remember">
+                <input type="checkbox">
+                <span>Keep me logged in</span>
+            </div>
+
+            <button type="submit" class="login-btn">Log in</button>
+
+            <a class="forgot" href="#">Forgot your password?</a>
+        </form>
+    </div>
+
+</main>
 
    <!--FOOTER-->
     <footer>
@@ -107,7 +111,7 @@
 
 
             <div class="social">
-                <p>Follow on social media:</p>
+                <p>Follow us on social media:</p>
                 <div class="Icones">
                     <a href="#"><img src="Assets/IMG/instagram.png"></a>
                     <a href="#"><img src="Assets/IMG/facebook.png"></a>

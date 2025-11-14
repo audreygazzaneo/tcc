@@ -187,74 +187,55 @@ header{
 .container {
     display: flex;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
-    padding: 100px;
+    padding: 40px 20px;
 }
 
-.left img {
-    width: 380px;
-    border-radius: 10px;
+.row {
+    display: flex;
+    gap: 10px;
 }
 
-.right {
-    width: 360px;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0001;
+.row div {
+    flex: 1;
 }
 
-.right h2 {
+.divider {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #777;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 10px;
 }
 
-.right p a {
-    color: #0077cc;
-}
-
-/* FORM */
-form {
+.social-btn button{
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    align-items:center;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.1rem;
+    margin-left: 3rem;
 }
 
-label {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-}
-
-.remember {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.login-btn {
-    background: #f3c26d;
-    padding: 12px;
+.social-btn{
     border: none;
+    background: none;
+    font-size: 1.2rem;
+    padding-left: 1rem;
     cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
 }
 
-.forgot {
-    display: block;
+.alt {
     text-align: center;
-    margin-top: 10px;
-    color: #cc0000;
 }
 
 
