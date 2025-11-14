@@ -194,7 +194,7 @@ header{
 
 .topo-jogos {
     width: 60%;
-    margin: 150px auto 40px auto; /* empurra para baixo da header */
+    margin: 150px auto 40px auto; 
     background: #bfe3ff;
     padding: 25px 0;
     border-radius: 20px;
@@ -211,11 +211,6 @@ header{
 .topo-jogos .icone {
     width: 35px;
     margin-top: 5px;
-}
-
-body {
-    background: #f5f7fa;
-    padding-top: 140PX;
 }
 
 .jogos {
