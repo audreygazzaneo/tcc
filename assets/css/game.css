@@ -279,7 +279,7 @@ header{
 }
 
 .btn {
-    align-items:baseline;
+    align-items:center;
     padding-left: 800px;
     margin-top: 20px;
     background: #f7cf66;
